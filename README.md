@@ -13,3 +13,8 @@ module.exports.turnservers = {
   }
 };
 ```
+
+then install deps `npm i`
+and run `npm start`
+
+app is accessible at `https://127.0.0.1:3002`
