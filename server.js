@@ -1,5 +1,4 @@
 const PORT = 3002;
-
 // we need https so getUserMedia works
 const https = require('https');
 const connect = require('connect');
@@ -9,7 +8,7 @@ const fs = require('fs');
 
 // static file server over https
 const app = connect();
-app.use(connectStatic('public/dist'))
+app.use(connectStatic('dist'))
 const server = https.createServer({
   key: fs.readFileSync('ssl/key.pem'),
   cert: fs.readFileSync('ssl/cert.pem')
